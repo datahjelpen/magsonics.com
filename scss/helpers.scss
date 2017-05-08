@@ -1,0 +1,77 @@
+// Various
+.disable-scrolling {
+    overflow: hidden;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+// Display and hide
+.hide-on-smallest {
+    @include hide-on("smallest");
+}
+
+.hide-on-small-and-up {
+    @include hide-on("small");
+    @include hide-on("medium");
+    @include hide-on("large");
+}
+
+.hide-on-small {
+    @include hide-on("small");
+}
+
+.hide-on-small-and-down {
+    @include hide-on("smallest");
+    @include hide-on("small");
+}
+
+.hide-on-medium-and-up {
+    @include hide-on("medium");
+    @include hide-on("large");
+}
+
+.hide-on-medium {
+    @include hide-on("medium");
+}
+
+.hide-on-medium-and-down {
+    @include hide-on("smallest");
+    @include hide-on("small");
+    @include hide-on("medium");
+}
+
+.hide-on-large {
+    @include hide-on("large");
+}
+
+.flipped {
+    display: inline-block;
+    @include transform(rotateY, 180deg);
+}
+
+// Colors
+.c-white-bg {
+    background-color: $color__white;
+}
+
+.c-light-bg {
+    background-color: $color__gray-light;
+}
+
+.c-black-bg {
+    background-color: $color__black;
+}
+
+.c-primary-bg {
+    background-color: $color__brand_primary;
+}
+
+.c-accent-bg {
+    background-color: $color__brand_accent;
+}

@@ -1,0 +1,96 @@
+// Grayscale
+$color__white:               #ffffff;
+$color__gray_light:          #f7f7f7;
+$color__gray:                #d6d6d6;
+$color__gray-dark:           #5a5a5a;
+$color__gray-darkest:        #333333;
+$color__black:               #000000;
+
+// Colors
+$color__red:                 #941600;
+$color__red_light:           #ff816b;
+$color__purple_light:        #914bd7;
+$color__purple:              #914bd7;
+$color__blue:                #003494;
+$color__blue_light:          #6b9fff;
+$color__green:               #009460;
+$color__green_light:         #6bffcb;
+$color__yellow:              #ffcb6b;
+$color__orange:              #ff5300;
+$color__orange_light:        #ff5300;
+
+// Brand colors
+$color__brand_primary:       $color__yellow;
+$color__brand_primary-light: lighten($color__brand_primary, 25%);
+$color__brand_primary-dark:  darken($color__brand_primary, 25%);
+$color__brand_accent:        $color__blue;
+$color__brand_accent-light:  $color__blue-light;
+$color__brand_accent-dark:   darken($color__brand_accent, 25%);
+
+// Gradients
+
+$color__brand_gradient_white: linear-gradient(135deg, #fff, #fff);
+$color__brand_gradient_black: linear-gradient(135deg, #000, #000);
+$color__brand_gradient_1: linear-gradient(135deg, #f54ea2, #ff7676);
+$color__brand_gradient_2: linear-gradient(135deg, #17ead9, #6078ea);
+$color__brand_gradient_3: linear-gradient(135deg, #42e695, #3bb2b8);
+$color__brand_gradient_4: linear-gradient(135deg, #f02fc2, #6094ea);
+
+// General
+$color__body-background: $color__gray_light;
+$color__text-main:       $color__gray_dark;
+$color__text-headings:   $color__black;
+$color__screen-text:     $color__blue;
+
+// Elements
+$color__screen-background: #f1f1f1;
+$color__pre-background:    #eee;
+$color__hr-background:     #ccc;
+$color__ins-background:    #fff9c0;
+
+// Footer
+$color__footer-background:   $color__gray_light;
+$color__footer-text:         $color__gray-dark;
+$color__footer-headings:     $color__black;
+$color__footer-links:        $color__gray-dark;
+$color__footer-toggle:       $color__gray-dark;
+$color__footer-links-active: $color__brand_primary;
+
+// Links
+$color__link:         $color__brand_primary;
+$color__link-visited: $color__link;
+$color__link-hover:   $color__brand_primary-dark;
+
+// Buttons
+$color__button-text:             $color__gray-dark;
+$color__button-text-hover:       $color__black;
+$color__button-text-focus:       $color__black;
+$color__button-border:           $color__gray_light;
+$color__button-border-hover:     $color__gray;
+$color__button-border-focus:     $color__gray;
+$color__button-background:       $color__gray_light;
+$color__button-background-hover: $color__gray;
+$color__button-background-focus: $color__gray;
+
+// Input
+$color__input-text:       #666;
+$color__input-text-focus: #111;
+$color__input-border:     #ccc;
+
+$color__abbr-border: #666;
+
+// Navigation
+$color__nav-background:              $color__white;
+$color__nav-links:                   $color__black;
+$color__nav-links-hover:             $color__brand-accent;
+$color__nav-links-bg:                $color__nav-background;
+$color__nav-links-bg-hover:          $color__nav-background;
+
+$color__nav-sub-menu-bg:             $color__white;
+$color__nav-sub-menu-links:          $color__nav-links;
+$color__nav-sub-menu-links-hover:    $color__nav-links-hover;
+$color__nav-sub-menu-links-bg:       $color__nav-links-bg;
+$color__nav-sub-menu-links-hover-bg: $color__nav-links-bg-hover;
+
+$color__nav-mobile-sub-menu-links:          $color__black;
+$color__nav-mobile-sub-menu-links-bg:       $color__white;

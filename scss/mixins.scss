@@ -1,0 +1,78 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+    font-size: ($sizeValue * 16) * 1px;
+    font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table
+    }
+
+    &:after{
+        clear: both
+    }
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+    clear: both;
+}
+
+@mixin hide-on($size) {
+    @if $size == "smallest" {
+        @media screen and (min-width: $smallest__up) and (max-width: $small) {
+            display: none;
+        }
+    }
+
+    @if $size == "small" {
+        @media screen and (min-width: $small__up) and (max-width: $medium) {
+            display: none;
+        }
+    }
+
+    @if $size == "medium" {
+        @media screen and (min-width: $medium__up) and (max-width: $large) {
+            display: none;
+        }
+    }
+
+    @if $size == "large" {
+        @media screen and (min-width: $large__up) {
+            display: none;
+        }
+    }
+}
+
+@mixin transition($time: 1s, $property: all, $easing: cubic-bezier(.4,0,.2,1)) {
+    @if ($property != transform) {
+        -webkit-transition:  $property $time $easing;
+        -moz-transition:     $property $time $easing;
+        -o-transition:       $property $time $easing;
+        transition:          $property $time $easing;
+    } @else {
+        -webkit-transition:  -webkit-+$property $time $easing;
+        -moz-transition:     -moz-+$property $time $easing;
+        -o-transition:       -o-+$property $time $easing;
+        transition:          $property $time $easing;
+    }
+}
+
+@mixin transform($function, $value) {
+    -webkit-transform:  $function+"("+$value+")";
+    -moz-transform:     $function+"("+$value+")";
+    -ms-transform:      $function+"("+$value+")";
+    -o-transform:       $function+"("+$value+")";
+    transform:          $function+"("+$value+")";
+}
