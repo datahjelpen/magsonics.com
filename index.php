@@ -25,7 +25,7 @@
     <div id="loader"></div>
     <?php require_once 'templates/navigation-index.php'; ?>
     <header id="fp-header" class="header">
-        <div class="header-image"></div>
+        <div class="header-image" style="background-image: url('/images/brand/k_header-2-comp.jpg');"></div>
         <div class="header-overlay"></div>
         <div class="header-inner layout-square-large">
             <h1>MagSonics</h1>
